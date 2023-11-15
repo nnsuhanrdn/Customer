@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Using Hidden Data for Session Tracking</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        Please register to your instructor's student address book.
+        
+        <form method = "get" action="GetRegistrationData.jsp">
+            <p>Customer ID <font color ="#FF0000">*</font>
+            <input type="text" name="Customer ID"/>&nbsp;
+            Discount Code (Only M, N, K allowed):
+            <input type="text" name="DiscountCode"/> &nbsp;
+            Name :
+            <input type="text" name="Name"/>
+            </p>
+            <p>
+                Telephone:
+                <input type="text" name="Telephone" /> &nbsp;
+                Email :
+                <input type="text" name="Email" /> &nbsp;
+                Fax
+                <input type="text" name="Fax" />
+            </p>
+            <p>
+                Address Line 1:
+                <input type="text" name="Address Line 1"/>
+            </p>
+            <p>
+                Address Line 2:
+                <input type="text" name="Address Line 2" />
+            </p>
+            <p>
+                City :
+                <input type="text" name="City" /> &nbsp;
+                State :
+                <select size = "1" name = "state">
+	           <option value = "NS">Negeri  Sembilan-NS</option>
+	           <option value = "SEL">selangor-sel</option>
+	           <option value = "JR">Johor-JR</option>
+	         </select>&nbsp;
+	         Zip <input type = "text" name = "zip" size = "9">
+            </p>
+            <p> Credit Limit :
+                <input type="text" name="Credit Limit"/>
+            </p>
+         <p><input type = "submit" name = "Submit" value = "Submit">
+	         <input type = "reset" value = "Reset">
+	      </p>
+	    </form>
+	    <p><font color = "#FF0000">* required fields</font></p>
+    </body>
+</html>
